@@ -5,19 +5,19 @@
 
 void sensor_init(Sensor* constme)
 {
-    printf("%s\n",__func__ );
+    printf("%s\n", __func__ );
 }
 
 void sensor_cleanup(Sensor* constme)
 {
-    printf("%s\n",__func__ );
+    printf("%s\n", __func__ );
 }
 
 Sensor* sensor_create(void)
 {
     Sensor *sensor = (Sensor*)malloc(sizeof(Sensor*));
     if(sensor != NULL){
-        Sensor_Init(sensor);
+        sensor_init(sensor);
     }
     return sensor;
 }
