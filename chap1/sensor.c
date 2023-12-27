@@ -22,7 +22,7 @@ Sensor* sensor_create(void)
     return sensor;
 }
 
-void sensor_destory(Sensor *sensor)
+void sensor_destroy(Sensor *sensor)
 {
     if (sensor != NULL){
         sensor_cleanup(sensor);
